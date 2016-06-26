@@ -22,7 +22,7 @@ Following steps are am example to use those launch files,
 0. Copy your models into ~/.gazebo/models .  
 1. Prepare ~/pioneer3at_ws by https://github.com/nkoenig/pioneer3at_demo .  
 2. $ cd ~/pioneer3at_ws/src  
-3. Extract attached pioneer3at_demo_sample.zip here with overwriting .  
+3. Extract attached pioneer3at_demo_plus.zip here with overwriting .  
 4. $ cd ~/pioneer3at_ws  
 5. $ catkin_make install  
 6. $ roslaunch p3at_description empty_world_multi_robot_example_RC2016.launch
