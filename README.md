@@ -1,21 +1,21 @@
 # p3at_with_sensors_for_gazebo_ros
-A p3at robot model with hokuyo and camera for using with gazebo_ros package.
+A p3at robot model with hokuyo and camera for using with gazebo_ros package.  
 
-I made some launch files.
-I attached a zip file with this mail.
-The zip file includes 3 launch files, 2 xacro files, 1 world file.
-
-Followings are descriptions of 3 launch files.
+I prepared a p3at xacro file with camera and hokuyo for user of the gazebo_ros envronment, and prepared some sample launch files.  
+Followings are descriptions of 3 launch files.  
 
  * p3at_RC2016.launch :
-   A prototype launch file to spawn a p3at with hokuyo and camera on
-RC2016VRL_event1.world.
+   A prototype launch file to spawn a p3at with hokuyo and camera on.  
+RC2016VRL_event1.world.  
 
- * spawn_p3at_RC2016.launch
-   A launch file to spawn a p3at with an own robot name, pose (x, y, z, yaw).
+ * spawn_p3at_RC2016.launch  
+   A launch file to spawn a p3at with an own robot name, pose (x, y, z, yaw).  
 
-* empty_world_multi_robot_example_RC2016.launch
-   A demo launch file to spawn 4 p3at robots on RC2016VRL_event1.world.
+* empty_world_multi_robot_example_RC2016.launch  
+   A demo launch file to spawn 4 p3at robots on RC2016VRL_event1.world.  
+
+Before use them, please change the world filename "RC2016VRL_event1.world" with your favorite one.  
+And please copy required models in your world file into ~/.gazebo/models/. , copy your wotld file into 
 
 One of 2 xacro files is a camera definition file, another one is p3at
 definition file to use the camera.
