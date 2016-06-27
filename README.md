@@ -15,20 +15,29 @@ RC2016VRL_event1.world.
    A demo launch file to spawn 4 p3at robots on RC2016VRL_event1.world.  
 
 Before use them, please change the world filename "RC2016VRL_event1.world" with your favorite one in those sample launch files.  
-And please copy required models in your world file into ~/.gazebo/models/. , copy your wotld file into ~/pioneer3at_ws/src/pioneer3at_demo/p3at_gazebo/worlds/ .   
 
 Following steps are am example to use those launch files,  
 
-0. Copy your models into ~/.gazebo/models .  
 1. Prepare ~/pioneer3at_ws by https://github.com/nkoenig/pioneer3at_demo .  
-2. $ cd ~/pioneer3at_ws/src  
-3. Extract attached pioneer3at_demo_plus.zip here with overwriting .  
-4. $ cd ~/pioneer3at_ws  
-5. $ catkin_make install  
-6. $ roslaunch p3at_description empty_world_multi_robot_example_RC2016.launch
-(Then go to another terminal.)  
-7. $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py 
-cmd_vel:=/robot1/cmd_vel
+2. Do following command :  
+    $ cd ~/pioneer3at_ws/src  
+3. Extract attached pioneer3at_demo.zip here with overwriting .  
+4. Do following commands :  
+    $ export GAZEBO_MODEL_PATH=~/RoboCupRescuePackage/models:${GAZEBO_MODEL_PATH}    
+    $ cd ~/pioneer3at_ws  
+    $ catkin_make install  
+    $ source ~/pioneer3at_ws/install/setup.bash
+    $ roslaunch p3at_description multi_robot_example_RC2016.launch
+5. Open another terminal.  
+6. Do following command :  
+    $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=/robot1/cmd_vel  
 
 Then you can see 4 p3at robots, and you can control robot1.  
-Have a good time.  
+
+If you want to use other world files, copy your wotld files into ~/pioneer3at_ws/src/pioneer3at_demo/p3at_gazebo/worlds/ .   
+And change the value of "world_name"(currently it is "USARGazebo.world") with your world filename in the launch file.  
+(Launch files are in ~/pioneer3at_ws/src/pioneer3at_demo/p3at_description/launch/)  
+To change the location of spawning robots, please change values of pose_x, pose_y, pose_yaw of each robot.  
+After changing, you need "catkin_make install" again.  
+
+Let's hands on!
