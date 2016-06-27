@@ -23,11 +23,11 @@ Following steps are am example to use those launch files,
     $ cd ~/pioneer3at_ws/src  
 3. Extract attached pioneer3at_demo.zip here with overwriting .  
 4. Do following commands :  
-    $ export GAZEBO_MODEL_PATH=~/RoboCupRescuePackage/models:${GAZEBO_MODEL_PATH}    
+    $ export GAZEBO_MODEL_PATH=~/RoboCupRescuePackage/models:${GAZEBO_MODEL_PATH}  
     $ cd ~/pioneer3at_ws  
     $ catkin_make install  
-    $ source ~/pioneer3at_ws/install/setup.bash
-    $ roslaunch p3at_description multi_robot_example_RC2016.launch
+    $ source ~/pioneer3at_ws/install/setup.bash  
+    $ roslaunch p3at_description multi_robot_example_RC2016.launch  
 5. Open another terminal.  
 6. Do following command :  
     $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=/robot1/cmd_vel  
