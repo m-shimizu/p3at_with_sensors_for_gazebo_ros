@@ -5,16 +5,15 @@ I prepared a p3at xacro file with camera and hokuyo for user of the gazebo_ros e
 Followings are descriptions of 3 launch files.  
 
  * p3at_RC2016.launch :
-   A prototype launch file to spawn a p3at with hokuyo and camera on.  
-RC2016VRL_event1.world.  
+   A prototype launch file to spawn a p3at with hokuyo and camera on USARGazebo.world.  
 
  * spawn_p3at_RC2016.launch  
    A launch file to spawn a p3at with an own robot name, pose (x, y, z, yaw).  
 
-* empty_world_multi_robot_example_RC2016.launch  
-   A demo launch file to spawn 4 p3at robots on RC2016VRL_event1.world.  
+ * multi_robot_example_RC2016.launch  
+   A demo launch file to spawn 4 p3at robots on USARGazebo.world.  
 
-Before use them, please change the world filename "RC2016VRL_event1.world" with your favorite one in those sample launch files.  
+Before use them, please change the world filename "USARGazebo.world" with your favorite one in those sample launch files.  
 
 Following steps are am example to use those launch files,  
 
